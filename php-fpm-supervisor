@@ -1,0 +1,9 @@
+[program:php-fpm]
+command=/usr/sbin/php-fpm
+priority=200
+stdout_logfile=/var/log/php-fpm_consumer.out.log
+stdout_logfile_maxbytes=0
+stderr_logfile=/var/log/php-fpm_consumer.err.log
+stderr_logfile_maxbytes=0
+username=www-data
+autorestart=true
